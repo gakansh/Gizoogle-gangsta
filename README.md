@@ -1,1 +1,2 @@
-# Gizoogle-gangsta
+# Gizoogle-gangsta 
+Python Bot framework
