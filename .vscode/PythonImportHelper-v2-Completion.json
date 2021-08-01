@@ -28,46 +28,46 @@
     {
         "label": "getupdates",
         "kind": 2,
-        "importPath": "Gizoogle-gangsta.bot",
-        "description": "Gizoogle-gangsta.bot",
+        "importPath": "bot",
+        "description": "bot",
         "peekOfCode": "def getupdates(offset):\n    url = \"https://api.telegram.org/bot1902634806:AAHa59sXh5xgMmeXjyZxXZWMcKLG0SnXFaU\" + \"/getUpdates?timeout=100\"\n    if offset is not None:\n        url = url + \"&offset={}\".format(offset + 1)\n    r = requests.get(url)\n    return json.loads(r.content)\ndef sendmessage(msg, char_id):\n    url = \"https://api.telegram.org/bot1902634806:AAHa59sXh5xgMmeXjyZxXZWMcKLG0SnXFaU\" + \"/sendMessage?text={}&chat_id={}\".format( msg,char_id)\n    if msg is not None:\n        requests.get(url)",
-        "detail": "Gizoogle-gangsta.bot",
+        "detail": "bot",
         "documentation": {}
     },
     {
         "label": "sendmessage",
         "kind": 2,
-        "importPath": "Gizoogle-gangsta.bot",
-        "description": "Gizoogle-gangsta.bot",
+        "importPath": "bot",
+        "description": "bot",
         "peekOfCode": "def sendmessage(msg, char_id):\n    url = \"https://api.telegram.org/bot1902634806:AAHa59sXh5xgMmeXjyZxXZWMcKLG0SnXFaU\" + \"/sendMessage?text={}&chat_id={}\".format( msg,char_id)\n    if msg is not None:\n        requests.get(url)\nupdate_id = None\ndef make_reply():\n    reply = \"Okazz\"\n    return reply\nupdate_id = None\nwhile True:",
-        "detail": "Gizoogle-gangsta.bot",
+        "detail": "bot",
         "documentation": {}
     },
     {
         "label": "make_reply",
         "kind": 2,
-        "importPath": "Gizoogle-gangsta.bot",
-        "description": "Gizoogle-gangsta.bot",
+        "importPath": "bot",
+        "description": "bot",
         "peekOfCode": "def make_reply():\n    reply = \"Okazz\"\n    return reply\nupdate_id = None\nwhile True:\n    print(\"......\")\n    updates = getupdates(update_id)\n    updates = updates['result']\n    if(updates):\n        for item in updates:",
-        "detail": "Gizoogle-gangsta.bot",
+        "detail": "bot",
         "documentation": {}
     },
     {
         "label": "update_id",
         "kind": 5,
-        "importPath": "Gizoogle-gangsta.bot",
-        "description": "Gizoogle-gangsta.bot",
+        "importPath": "bot",
+        "description": "bot",
         "peekOfCode": "update_id = None\ndef make_reply():\n    reply = \"Okazz\"\n    return reply\nupdate_id = None\nwhile True:\n    print(\"......\")\n    updates = getupdates(update_id)\n    updates = updates['result']\n    if(updates):",
-        "detail": "Gizoogle-gangsta.bot",
+        "detail": "bot",
         "documentation": {}
     },
     {
         "label": "update_id",
         "kind": 5,
-        "importPath": "Gizoogle-gangsta.bot",
-        "description": "Gizoogle-gangsta.bot",
+        "importPath": "bot",
+        "description": "bot",
         "peekOfCode": "update_id = None\nwhile True:\n    print(\"......\")\n    updates = getupdates(update_id)\n    updates = updates['result']\n    if(updates):\n        for item in updates:\n            update_id = item[\"update_id\"]\n            try:\n                msg = item[\"message\"][\"text\"]",
-        "detail": "Gizoogle-gangsta.bot",
+        "detail": "bot",
         "documentation": {}
     }
 ]
